@@ -1,0 +1,286 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial;
+}
+
+body{
+    background:#111;
+    color:white;
+}
+
+/* HEADER */
+.header{
+    background:#000;
+    border-bottom:2px solid #ffb742;
+    width: 100%;
+}
+
+.header-section{
+    padding: 10px 40px;
+}
+
+.header-main{
+    max-width: 1200px;
+    margin: 0 auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    width:160px;
+    height: auto;
+    object-fit: cover;
+}
+
+.title{
+    font-size:32px;
+    color:#ffb742;
+    font-weight:bold;
+}
+
+/* SECTION */
+.gym-section{
+    width:100%;
+}
+
+.container{
+    display:flex;
+    justify-content:center;
+    padding:40px;
+}
+
+/* FORM */
+form{
+    background:#1c1c1c;
+    padding:30px;
+    width:100%;
+    max-width:1200px;
+    border-radius:10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* TITLES */
+h2{
+    text-align:center;
+    color:#ffb742;
+    margin: 0 0 30px;
+    font-size:40px;
+}
+
+h3{
+    margin: 20px 0 0;
+    color:#ffb742;
+    font-size:22px;
+}
+
+.pro-img{
+    padding: 12px 0;
+}
+
+/* ROW SYSTEM */
+.row{
+    display:flex;
+    gap:15px;
+    margin:10px 0;
+}
+
+.interest{
+    font-size:18px;
+    margin: 6px 0 0;
+}
+
+/* INPUTS */
+input, select{
+    flex:1;
+    padding:12px;
+    border:none;
+    border-radius:5px;
+    outline:none;
+    font-size:14px;
+}
+
+/* RULE BOX */
+.rules-box{
+    background:#2a2a2a;
+    padding:15px;
+    border-radius:8px;
+    margin-top:10px;
+    font-size:14px;
+    line-height:1.6;
+}
+
+.rules-box ol{
+    padding-left:20px;
+}
+
+/* SUBMIT */
+input[type="submit"]{
+    width:40%;
+    background:#ffb742;
+    color:black;
+    padding:14px;
+    border:none;
+    margin: 30px auto 0;
+    font-weight:bold;
+    cursor:pointer;
+    border-radius:30px;
+    transition:0.3s;
+}
+
+input[type="submit"]:hover{
+    transform: scale(1.02);
+    box-shadow: 0px 5px 12px rgba(245, 201, 120, 0.5);
+}
+
+/* ========================= */
+/* DASHBOARD SECTION */
+/* ========================= */
+
+.dash-section{
+    width: 100%;
+}
+
+.dash-main{
+    padding: 0 40px 40px;
+    width: 100%;
+}
+
+.dashboard{
+    display:flex;
+    gap:20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* LEFT + RIGHT BOX */
+.list, .profile{
+    width:50%;
+    background:#1c1c1c;
+    padding:20px;
+    border-radius:10px;
+    height: 450px;
+    overflow-y:auto;
+}
+
+/* MEMBER ITEM */
+.member-item{
+    padding:10px;
+    background:#333;
+    margin:8px 0;
+    cursor:pointer;
+    border-radius:6px;
+    transition:0.3s;
+}
+
+.member-item:hover{
+    background:#ffb742;
+    color:black;
+    transform: scale(1.02);
+}
+
+/* PROFILE IMAGE */
+.profile img{
+    width:140px;
+    height:140px;
+    border-radius:50%;
+    object-fit:cover;
+    border:3px solid #ffb742;
+    display:block;
+}
+
+/* PROFILE NAME */
+.profile h2{
+    text-align:center;
+    margin-bottom:10px;
+    color:#ffb742;
+}
+
+/* SCROLLBAR */
+.list::-webkit-scrollbar,
+.profile::-webkit-scrollbar{
+    width:6px;
+}
+
+.list::-webkit-scrollbar-thumb,
+.profile::-webkit-scrollbar-thumb{
+    background:#ffb742;
+    border-radius:10px;
+}
+
+.member-item{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.deleteBtn{
+    background:red;
+    color:white;
+    border:none;
+    padding:5px 10px;
+    border-radius:5px;
+    cursor:pointer;
+    font-size:12px;
+}
+
+.deleteBtn:hover{
+    background:darkred;
+}
+
+/* ========================= */
+/* MOBILE RESPONSIVE */
+/* ========================= */
+
+@media (max-width:600px) {
+
+    .header{
+        padding: 10px 20px;
+    }
+
+    .logo{
+        width: 80px;
+    }
+
+    .title{
+        font-size: 18px;
+    }
+
+    .container{
+        padding: 40px 20px;
+    }
+
+    form{
+        padding: 30px 15px;
+    }
+
+    h2{
+        font-size: 28px;
+        margin: 0 0 20px;
+    }
+
+    h3{
+        margin: 10px 0 0;
+    }
+
+    .row{
+        flex-direction: column;
+    }
+
+    input[type="submit"]{
+        width: 80%;
+    }
+
+    .dashboard{
+        flex-direction: column;
+    }
+
+    .list, .profile{
+        width:100%;
+        height:auto;
+    }
+}
